@@ -1,0 +1,33 @@
+# Node dependencies
+node_modules/
+
+# Environment files and credentials
+.env
+.env.*
+*.env
+*.local
+!*.example
+
+# Uploaded media and local database files
+uploads/*
+!uploads/.gitkeep
+data/
+*.sqlite
+*.db
+
+# Certificates and private keys
+*.pem
+*.key
+*.cert
+*.crt
+*.pfx
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS / Editor files
+.DS_Store
+.idea/
+.vscode/

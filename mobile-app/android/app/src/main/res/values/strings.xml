@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">PrivateID</string>
+    <string name="title_activity_main">PrivateID</string>
+    <string name="package_name">com.privateid.chat</string>
+    <string name="custom_url_scheme">com.privateid.chat</string>
+</resources>

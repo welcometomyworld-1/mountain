@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="neonGlow" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06B6D4" />
+      <stop offset="50%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#F97316" />
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+  </defs>
+  <!-- Background rounded app icon -->
+  <rect width="64" height="64" rx="16" fill="url(#bgGrad)" stroke="#38BDF8" stroke-width="1.5"/>
+  <!-- Mountain Peaks -->
+  <polygon points="4,56 24,28 38,44 50,22 62,56" fill="#1E293B" opacity="0.6"/>
+  <polyline points="4,56 24,28 38,44 50,22 62,56" fill="none" stroke="#0284C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Speed lines -->
+  <line x1="8" y1="46" x2="22" y2="40" stroke="#F97316" stroke-width="2" stroke-linecap="round"/>
+  <line x1="12" y1="50" x2="26" y2="44" stroke="#06B6D4" stroke-width="2" stroke-linecap="round"/>
+  <!-- Sleek Racing Car Silhouette climbing -->
+  <g transform="translate(18, 22) rotate(-18)">
+    <!-- Car body -->
+    <path d="M2 14 L8 8 L18 6 L28 8 L36 12 L37 15 L1 15 Z" fill="url(#neonGlow)" />
+    <!-- Cabin windshield -->
+    <path d="M10 8 L16 3 L24 3 L27 8 Z" fill="#E0F2FE" opacity="0.9" />
+    <!-- Rear spoiler -->
+    <path d="M0 10 L4 10 L3 13 Z" fill="#F97316" />
+    <!-- Headlight beam -->
+    <polygon points="36,13 46,10 44,15" fill="#38BDF8" opacity="0.8" />
+    <!-- Wheels -->
+    <circle cx="8" cy="15" r="3.5" fill="#0F172A" stroke="#06B6D4" stroke-width="1.5" />
+    <circle cx="28" cy="15" r="3.5" fill="#0F172A" stroke="#06B6D4" stroke-width="1.5" />
+    <circle cx="8" cy="15" r="1.5" fill="#F97316" />
+    <circle cx="28" cy="15" r="1.5" fill="#F97316" />
+  </g>
+</svg>

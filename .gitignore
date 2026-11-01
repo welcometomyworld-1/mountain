@@ -1,0 +1,67 @@
+# Dependency directories
+node_modules/
+*/node_modules/
+*/*/node_modules/
+
+# Environment variable files and secrets (NEVER commit to Git)
+.env
+.env.*
+*.env
+*.local
+!*.example
+
+# Build and distribution directories
+dist/
+client/dist/
+dist-ssr/
+build/
+out/
+.expo/
+.next/
+
+# Runtime and local storage
+uploads/*
+!uploads/.gitkeep
+server/uploads/*
+!server/uploads/.gitkeep
+data/
+server/data/
+*.db
+*.sqlite
+
+# Cryptographic keys, certificates, credentials
+*.pem
+*.key
+*.cert
+*.crt
+*.pfx
+*.p12
+
+# Mobile build artifacts (Capacitor & Android Gradle)
+mobile-app/dist/
+mobile-app/android/app/build/
+mobile-app/android/.gradle/
+mobile-app/android/build/
+mobile-app/android/captures/
+*.keystore
+*.jks
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# IDE and OS files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db

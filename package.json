@@ -1,0 +1,26 @@
+{
+  "name": "privateid-platform",
+  "version": "1.0.0",
+  "description": "PrivateID - ID-based Real-Time Chat & WebRTC Video Calling Platform",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client && npm install --prefix mobile-app",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "build:client": "npm run build --prefix client",
+    "build:server": "npm run build --prefix server",
+    "start": "npm run start --prefix server",
+    "android:open": "node mobile-app/scripts/open-android.js",
+    "android:sync": "node mobile-app/scripts/sync.js",
+    "android:build": "npm run build:client && node mobile-app/scripts/sync.js",
+    "mobile:open": "node mobile-app/scripts/open-android.js",
+    "expo:start": "npm start --prefix expo-mobile",
+    "expo:android": "npm run android --prefix expo-mobile",
+    "expo:apk": "npm run build:apk --prefix expo-mobile"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.5.3",
+    "concurrently": "^9.1.2"
+  }
+}

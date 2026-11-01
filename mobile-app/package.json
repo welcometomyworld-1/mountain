@@ -1,0 +1,25 @@
+{
+  "name": "privateid-mobile-app",
+  "version": "1.0.0",
+  "description": "PrivateID Mobile Application (Android Native & Capacitor)",
+  "type": "module",
+  "private": true,
+  "main": "capacitor.config.ts",
+  "scripts": {
+    "open": "node scripts/open-android.js",
+    "sync": "node scripts/sync.js",
+    "build": "npm run android:build --prefix ..",
+    "dev": "npm run dev --prefix ..",
+    "android:build": "npm run android:build --prefix ..",
+    "android:open": "node scripts/open-android.js",
+    "android:sync": "node scripts/sync.js",
+    "expo:start": "npm start --prefix ../expo-mobile",
+    "expo:android": "npm run android --prefix ../expo-mobile",
+    "expo:apk": "npm run build:apk --prefix ../expo-mobile"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.4.4",
+    "@capacitor/cli": "^7.4.4",
+    "@capacitor/core": "^7.4.4"
+  }
+}
